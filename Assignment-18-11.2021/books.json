@@ -1,0 +1,702 @@
+[
+    {
+        "Author_Name": "Valentine Tapner",
+        "Book_Name": "Uraeginthus bengalus",
+        "Pages": 235,
+        "Published_Year": 1986,
+        "id": 436
+    },
+    {
+        "Author_Name": "Zandra Concannon",
+        "Book_Name": "Sula nebouxii",
+        "Pages": 269,
+        "Published_Year": 1993,
+        "id": 379
+    },
+    {
+        "Author_Name": "Horten Shieldon",
+        "Book_Name": "unavailable",
+        "Pages": 341,
+        "Published_Year": 2007,
+        "id": 60
+    },
+    {
+        "Author_Name": "Trever Beeken",
+        "Book_Name": "Taxidea taxus",
+        "Pages": 471,
+        "Published_Year": 1997,
+        "id": 464
+    },
+    {
+        "Author_Name": "Herbert Elegood",
+        "Book_Name": "Acridotheres tristis",
+        "Pages": 457,
+        "Published_Year": 2006,
+        "id": 323
+    },
+    {
+        "Author_Name": "Lesly Trinkwon",
+        "Book_Name": "Columba livia",
+        "Pages": 400,
+        "Published_Year": 2010,
+        "id": 132
+    },
+    {
+        "Author_Name": "Tami Liggins",
+        "Book_Name": "Ploceus intermedius",
+        "Pages": 202,
+        "Published_Year": 2001,
+        "id": 354
+    },
+    {
+        "Author_Name": "Bernadene Mellmer",
+        "Book_Name": "Crotaphytus collaris",
+        "Pages": 475,
+        "Published_Year": 1997,
+        "id": 417
+    },
+    {
+        "Author_Name": "Mohammed Necrews",
+        "Book_Name": "Dendrohyrax brucel",
+        "Pages": 453,
+        "Published_Year": 2009,
+        "id": 241
+    },
+    {
+        "Author_Name": "Esma Brimilcome",
+        "Book_Name": "Corvus albicollis",
+        "Pages": 417,
+        "Published_Year": 2000,
+        "id": 213
+    },
+    {
+        "Author_Name": "Alanson Matyashev",
+        "Book_Name": "Choloepus hoffmani",
+        "Pages": 143,
+        "Published_Year": 2004,
+        "id": 247
+    },
+    {
+        "Author_Name": "Kori Rasell",
+        "Book_Name": "Pseudoleistes virescens",
+        "Pages": 109,
+        "Published_Year": 2012,
+        "id": 195
+    },
+    {
+        "Author_Name": "Bradley Halsted",
+        "Book_Name": "Gyps bengalensis",
+        "Pages": 487,
+        "Published_Year": 1986,
+        "id": 498
+    },
+    {
+        "Author_Name": "Ritchie Lambden",
+        "Book_Name": "Gyps fulvus",
+        "Pages": 267,
+        "Published_Year": 2003,
+        "id": 437
+    },
+    {
+        "Author_Name": "Sayre Jayme",
+        "Book_Name": "Vulpes chama",
+        "Pages": 200,
+        "Published_Year": 1998,
+        "id": 287
+    },
+    {
+        "Author_Name": "Raddy Sawtell",
+        "Book_Name": "Halcyon smyrnesis",
+        "Pages": 476,
+        "Published_Year": 2009,
+        "id": 280
+    },
+    {
+        "Author_Name": "Maxi Dace",
+        "Book_Name": "Papio cynocephalus",
+        "Pages": 422,
+        "Published_Year": 1992,
+        "id": 482
+    },
+    {
+        "Author_Name": "Jeremias Askham",
+        "Book_Name": "Ciconia episcopus",
+        "Pages": 318,
+        "Published_Year": 1998,
+        "id": 17
+    },
+    {
+        "Author_Name": "Karlens Clayhill",
+        "Book_Name": "Myiarchus tuberculifer",
+        "Pages": 279,
+        "Published_Year": 2009,
+        "id": 383
+    },
+    {
+        "Author_Name": "Lorrayne Demeza",
+        "Book_Name": "Panthera leo persica",
+        "Pages": 105,
+        "Published_Year": 2012,
+        "id": 266
+    },
+    {
+        "Author_Name": "Peri Simonelli",
+        "Book_Name": "Diomedea irrorata",
+        "Pages": 335,
+        "Published_Year": 2011,
+        "id": 174
+    },
+    {
+        "Author_Name": "Ilysa Charge",
+        "Book_Name": "Macropus giganteus",
+        "Pages": 351,
+        "Published_Year": 2004,
+        "id": 296
+    },
+    {
+        "Author_Name": "Angelia Mackstead",
+        "Book_Name": "Aonyx capensis",
+        "Pages": 173,
+        "Published_Year": 2000,
+        "id": 84
+    },
+    {
+        "Author_Name": "Pierson Claasen",
+        "Book_Name": "Meles meles",
+        "Pages": 246,
+        "Published_Year": 2001,
+        "id": 336
+    },
+    {
+        "Author_Name": "Thain Bodocs",
+        "Book_Name": "Sylvilagus floridanus",
+        "Pages": 270,
+        "Published_Year": 2004,
+        "id": 481
+    },
+    {
+        "Author_Name": "Megan Quartly",
+        "Book_Name": "Caiman crocodilus",
+        "Pages": 414,
+        "Published_Year": 2006,
+        "id": 328
+    },
+    {
+        "Author_Name": "Tucky Everal",
+        "Book_Name": "Amazona sp.",
+        "Pages": 394,
+        "Published_Year": 2003,
+        "id": 8
+    },
+    {
+        "Author_Name": "Daisi Caswill",
+        "Book_Name": "Isoodon obesulus",
+        "Pages": 133,
+        "Published_Year": 2000,
+        "id": 296
+    },
+    {
+        "Author_Name": "Zacharie Nelm",
+        "Book_Name": "Herpestes javanicus",
+        "Pages": 403,
+        "Published_Year": 2009,
+        "id": 27
+    },
+    {
+        "Author_Name": "Tresa Josipovic",
+        "Book_Name": "Oreamnos americanus",
+        "Pages": 201,
+        "Published_Year": 1996,
+        "id": 62
+    },
+    {
+        "Author_Name": "Olenolin Eldered",
+        "Book_Name": "Bubalus arnee",
+        "Pages": 112,
+        "Published_Year": 1995,
+        "id": 366
+    },
+    {
+        "Author_Name": "Morgan Shivell",
+        "Book_Name": "Varanus salvator",
+        "Pages": 465,
+        "Published_Year": 2008,
+        "id": 39
+    },
+    {
+        "Author_Name": "Chico Gozney",
+        "Book_Name": "Gekko gecko",
+        "Pages": 338,
+        "Published_Year": 2006,
+        "id": 391
+    },
+    {
+        "Author_Name": "Eleonore Gibbonson",
+        "Book_Name": "Hymenolaimus malacorhynchus",
+        "Pages": 315,
+        "Published_Year": 1996,
+        "id": 350
+    },
+    {
+        "Author_Name": "Julianne Hanniger",
+        "Book_Name": "Motacilla aguimp",
+        "Pages": 319,
+        "Published_Year": 2007,
+        "id": 71
+    },
+    {
+        "Author_Name": "Mahala Croall",
+        "Book_Name": "Alouatta seniculus",
+        "Pages": 395,
+        "Published_Year": 2007,
+        "id": 344
+    },
+    {
+        "Author_Name": "Saba Pyne",
+        "Book_Name": "Taxidea taxus",
+        "Pages": 270,
+        "Published_Year": 1998,
+        "id": 31
+    },
+    {
+        "Author_Name": "Kathye Caulcott",
+        "Book_Name": "Tayassu pecari",
+        "Pages": 454,
+        "Published_Year": 1991,
+        "id": 140
+    },
+    {
+        "Author_Name": "Rollie Margrett",
+        "Book_Name": "Eolophus roseicapillus",
+        "Pages": 260,
+        "Published_Year": 2005,
+        "id": 142
+    },
+    {
+        "Author_Name": "Hermann Wolfinger",
+        "Book_Name": "Eutamias minimus",
+        "Pages": 259,
+        "Published_Year": 1990,
+        "id": 161
+    },
+    {
+        "Author_Name": "Jecho Dransfield",
+        "Book_Name": "Spermophilus lateralis",
+        "Pages": 440,
+        "Published_Year": 2001,
+        "id": 440
+    },
+    {
+        "Author_Name": "Byrann Krolik",
+        "Book_Name": "Mungos mungo",
+        "Pages": 355,
+        "Published_Year": 1994,
+        "id": 98
+    },
+    {
+        "Author_Name": "Janis MacVicar",
+        "Book_Name": "Scolopax minor",
+        "Pages": 425,
+        "Published_Year": 2007,
+        "id": 332
+    },
+    {
+        "Author_Name": "Winifield Drillot",
+        "Book_Name": "Microcebus murinus",
+        "Pages": 456,
+        "Published_Year": 1986,
+        "id": 389
+    },
+    {
+        "Author_Name": "Verena Fautley",
+        "Book_Name": "Lophoaetus occipitalis",
+        "Pages": 357,
+        "Published_Year": 1995,
+        "id": 226
+    },
+    {
+        "Author_Name": "Perla Skoate",
+        "Book_Name": "Anas bahamensis",
+        "Pages": 327,
+        "Published_Year": 2001,
+        "id": 83
+    },
+    {
+        "Author_Name": "Lelah Cotter",
+        "Book_Name": "Phalacrocorax carbo",
+        "Pages": 391,
+        "Published_Year": 2011,
+        "id": 138
+    },
+    {
+        "Author_Name": "Amil Guilliatt",
+        "Book_Name": "Lophoaetus occipitalis",
+        "Pages": 393,
+        "Published_Year": 2003,
+        "id": 342
+    },
+    {
+        "Author_Name": "Alyda Niland",
+        "Book_Name": "Amblyrhynchus cristatus",
+        "Pages": 381,
+        "Published_Year": 1993,
+        "id": 256
+    },
+    {
+        "Author_Name": "Joceline Damiata",
+        "Book_Name": "Papio cynocephalus",
+        "Pages": 459,
+        "Published_Year": 1987,
+        "id": 75
+    },
+    {
+        "Author_Name": "Dinnie Gascar",
+        "Book_Name": "Phalaropus fulicarius",
+        "Pages": 204,
+        "Published_Year": 2009,
+        "id": 365
+    },
+    {
+        "Author_Name": "Cyndia Drew",
+        "Book_Name": "Ammospermophilus nelsoni",
+        "Pages": 473,
+        "Published_Year": 2008,
+        "id": 69
+    },
+    {
+        "Author_Name": "Kellina Jantet",
+        "Book_Name": "Herpestes javanicus",
+        "Pages": 353,
+        "Published_Year": 1986,
+        "id": 449
+    },
+    {
+        "Author_Name": "Chelsey Mullane",
+        "Book_Name": "Amazona sp.",
+        "Pages": 456,
+        "Published_Year": 1984,
+        "id": 169
+    },
+    {
+        "Author_Name": "Olenka Bowley",
+        "Book_Name": "Sarkidornis melanotos",
+        "Pages": 461,
+        "Published_Year": 1968,
+        "id": 138
+    },
+    {
+        "Author_Name": "Carlyn Memmory",
+        "Book_Name": "Plectopterus gambensis",
+        "Pages": 307,
+        "Published_Year": 2003,
+        "id": 476
+    },
+    {
+        "Author_Name": "Morganne Duro",
+        "Book_Name": "Pavo cristatus",
+        "Pages": 162,
+        "Published_Year": 1992,
+        "id": 109
+    },
+    {
+        "Author_Name": "Kimball Llewellyn",
+        "Book_Name": "Butorides striatus",
+        "Pages": 227,
+        "Published_Year": 2011,
+        "id": 286
+    },
+    {
+        "Author_Name": "Consolata Jefferson",
+        "Book_Name": "Buteo galapagoensis",
+        "Pages": 481,
+        "Published_Year": 1981,
+        "id": 447
+    },
+    {
+        "Author_Name": "Junette Alleburton",
+        "Book_Name": "Ara chloroptera",
+        "Pages": 240,
+        "Published_Year": 2007,
+        "id": 117
+    },
+    {
+        "Author_Name": "Venus Poland",
+        "Book_Name": "Corvus albicollis",
+        "Pages": 266,
+        "Published_Year": 2008,
+        "id": 279
+    },
+    {
+        "Author_Name": "Cooper Farquharson",
+        "Book_Name": "Mellivora capensis",
+        "Pages": 184,
+        "Published_Year": 1999,
+        "id": 486
+    },
+    {
+        "Author_Name": "Dulcy Kantor",
+        "Book_Name": "Bison bison",
+        "Pages": 374,
+        "Published_Year": 2011,
+        "id": 490
+    },
+    {
+        "Author_Name": "Elinore Berzins",
+        "Book_Name": "Haliaetus vocifer",
+        "Pages": 126,
+        "Published_Year": 2002,
+        "id": 423
+    },
+    {
+        "Author_Name": "Glennie Brownhill",
+        "Book_Name": "unavailable",
+        "Pages": 156,
+        "Published_Year": 1990,
+        "id": 106
+    },
+    {
+        "Author_Name": "Xylina Buckland",
+        "Book_Name": "Dasyurus maculatus",
+        "Pages": 147,
+        "Published_Year": 2008,
+        "id": 413
+    },
+    {
+        "Author_Name": "Hulda Dries",
+        "Book_Name": "Pycnonotus nigricans",
+        "Pages": 116,
+        "Published_Year": 2006,
+        "id": 399
+    },
+    {
+        "Author_Name": "Donaugh Edwicker",
+        "Book_Name": "Rhea americana",
+        "Pages": 242,
+        "Published_Year": 2002,
+        "id": 478
+    },
+    {
+        "Author_Name": "Bartolemo Bodemeaid",
+        "Book_Name": "Laniarius ferrugineus",
+        "Pages": 201,
+        "Published_Year": 2007,
+        "id": 423
+    },
+    {
+        "Author_Name": "Tore Mabbe",
+        "Book_Name": "Merops nubicus",
+        "Pages": 181,
+        "Published_Year": 2006,
+        "id": 147
+    },
+    {
+        "Author_Name": "Carolee Pflieger",
+        "Book_Name": "Macropus rufogriseus",
+        "Pages": 201,
+        "Published_Year": 1997,
+        "id": 194
+    },
+    {
+        "Author_Name": "Constance Maskill",
+        "Book_Name": "Coendou prehensilis",
+        "Pages": 432,
+        "Published_Year": 1996,
+        "id": 148
+    },
+    {
+        "Author_Name": "Miriam Hilhouse",
+        "Book_Name": "Varanus komodensis",
+        "Pages": 499,
+        "Published_Year": 2000,
+        "id": 169
+    },
+    {
+        "Author_Name": "Libbi Prebble",
+        "Book_Name": "Marmota monax",
+        "Pages": 182,
+        "Published_Year": 2004,
+        "id": 67
+    },
+    {
+        "Author_Name": "Mart Rosle",
+        "Book_Name": "Paradoxurus hermaphroditus",
+        "Pages": 319,
+        "Published_Year": 2000,
+        "id": 158
+    },
+    {
+        "Author_Name": "Bunni Mountstephen",
+        "Book_Name": "Deroptyus accipitrinus",
+        "Pages": 398,
+        "Published_Year": 1993,
+        "id": 57
+    },
+    {
+        "Author_Name": "Calhoun Skedgell",
+        "Book_Name": "Hymenolaimus malacorhynchus",
+        "Pages": 194,
+        "Published_Year": 2005,
+        "id": 133
+    },
+    {
+        "Author_Name": "Vladamir Matskevich",
+        "Book_Name": "Megaderma spasma",
+        "Pages": 158,
+        "Published_Year": 2009,
+        "id": 499
+    },
+    {
+        "Author_Name": "Tiphany Boyde",
+        "Book_Name": "Acridotheres tristis",
+        "Pages": 366,
+        "Published_Year": 1990,
+        "id": 379
+    },
+    {
+        "Author_Name": "Tildy Stoop",
+        "Book_Name": "Spheniscus magellanicus",
+        "Pages": 299,
+        "Published_Year": 2009,
+        "id": 326
+    },
+    {
+        "Author_Name": "Tobey Noon",
+        "Book_Name": "Acrantophis madagascariensis",
+        "Pages": 110,
+        "Published_Year": 2007,
+        "id": 223
+    },
+    {
+        "Author_Name": "Trevar Tutchings",
+        "Book_Name": "Falco peregrinus",
+        "Pages": 150,
+        "Published_Year": 1992,
+        "id": 160
+    },
+    {
+        "Author_Name": "Amory Ames",
+        "Book_Name": "Bubo sp.",
+        "Pages": 146,
+        "Published_Year": 1994,
+        "id": 172
+    },
+    {
+        "Author_Name": "Suki Boyington",
+        "Book_Name": "Ursus maritimus",
+        "Pages": 178,
+        "Published_Year": 1997,
+        "id": 301
+    },
+    {
+        "Author_Name": "Thorin Tebboth",
+        "Book_Name": "Acrobates pygmaeus",
+        "Pages": 474,
+        "Published_Year": 2011,
+        "id": 374
+    },
+    {
+        "Author_Name": "Katusha Sproson",
+        "Book_Name": "Terrapene carolina",
+        "Pages": 110,
+        "Published_Year": 2009,
+        "id": 324
+    },
+    {
+        "Author_Name": "Randi Beswick",
+        "Book_Name": "Neophoca cinerea",
+        "Pages": 254,
+        "Published_Year": 2001,
+        "id": 196
+    },
+    {
+        "Author_Name": "Serene Broszkiewicz",
+        "Book_Name": "Trachyphonus vaillantii",
+        "Pages": 348,
+        "Published_Year": 1962,
+        "id": 97
+    },
+    {
+        "Author_Name": "Evelin Gabotti",
+        "Book_Name": "Propithecus verreauxi",
+        "Pages": 139,
+        "Published_Year": 1996,
+        "id": 88
+    },
+    {
+        "Author_Name": "Niki Borgnet",
+        "Book_Name": "Galago crassicaudataus",
+        "Pages": 367,
+        "Published_Year": 2000,
+        "id": 101
+    },
+    {
+        "Author_Name": "Parry Mollett",
+        "Book_Name": "Grus rubicundus",
+        "Pages": 230,
+        "Published_Year": 2004,
+        "id": 24
+    },
+    {
+        "Author_Name": "Cherey Suscens",
+        "Book_Name": "Nyctea scandiaca",
+        "Pages": 328,
+        "Published_Year": 2006,
+        "id": 442
+    },
+    {
+        "Author_Name": "Easter Titcumb",
+        "Book_Name": "Kobus defassa",
+        "Pages": 349,
+        "Published_Year": 1997,
+        "id": 451
+    },
+    {
+        "Author_Name": "Redd Golthorpp",
+        "Book_Name": "Trachyphonus vaillantii",
+        "Pages": 154,
+        "Published_Year": 2012,
+        "id": 274
+    },
+    {
+        "Author_Name": "Delores Ashburne",
+        "Book_Name": "Macropus rufogriseus",
+        "Pages": 182,
+        "Published_Year": 2008,
+        "id": 10
+    },
+    {
+        "Author_Name": "Derwin Howchin",
+        "Book_Name": "Laniarius ferrugineus",
+        "Pages": 496,
+        "Published_Year": 2007,
+        "id": 74
+    },
+    {
+        "Author_Name": "Veradis Beazer",
+        "Book_Name": "Myotis lucifugus",
+        "Pages": 194,
+        "Published_Year": 2008,
+        "id": 178
+    },
+    {
+        "Author_Name": "Jacinda Novill",
+        "Book_Name": "Macropus fuliginosus",
+        "Pages": 356,
+        "Published_Year": 2007,
+        "id": 310
+    },
+    {
+        "Author_Name": "Humphrey Crossfeld",
+        "Book_Name": "Petaurus norfolcensis",
+        "Pages": 408,
+        "Published_Year": 1993,
+        "id": 159
+    },
+    {
+        "Author_Name": "Karen Goodhall",
+        "Book_Name": "Pteronura brasiliensis",
+        "Pages": 456,
+        "Published_Year": 2004,
+        "id": 261
+    }
+]
