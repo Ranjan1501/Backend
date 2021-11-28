@@ -9,6 +9,7 @@ const evaluationsController = require('./controllers/evaluation.controller');
 
 
 const app = express();
+app.use(express.json()); 
 app.use("/users",usersController);
 app.use("/topics",topicsController);
 app.use("/evaluations",evaluationsController);
