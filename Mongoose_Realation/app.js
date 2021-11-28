@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-
-
-
 const connect = () => {
     return mongoose.connect("mongodb://localhost:27017/test");
 };
@@ -19,56 +16,76 @@ const bookSchema = new mongoose.Schema({
 
 const Book = mongoose.model("book", bookSchema);
 
-// author Schema 
+// user Schema 
 
-const authorSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     first_name: { type: String, required: true },
     last_name: { type: String, required: true },
     age: { type: Number, required: true },
+
+
+}, {
+    versionKey: false,
+    timestamps: true,
+});
+
+const User = mongoose.model("user", userSchema);
+
+// checkedIN Schema
+
+const checked_InSchema = new mongoose.Schema({
     book_ids: [
         {
             type: mongoose.Schema.Types.ObjectId,
             ref: "book",
-            required: true
+            required: true,
+            unique: true,
         },
     ],
-    tag_ids: [
+    user_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
+    },
+}, {
+    versionKey: false,
+    timestamps: true,
+});
+
+const CheckedIn = mongoose.model("checked_In", checked_InSchema);
+
+// checkedOut Schema
+
+const checked_OutSchema = new mongoose.Schema({
+    checked_In_ids: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "tag",
+            ref: "checked_In",
             required: true,
-        }
+           
+        },
     ],
-
+  
 }, {
     versionKey: false,
     timestamps: true,
 });
 
-const Author = mongoose.model("author", authorSchema);
+const CheckedOut = mongoose.model("checked_Out",checked_OutSchema);
 
-// tag Schema
 
-const tagSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-}, {
-    versionKey: false,
-    timestamps: true,
-});
-
-const Tag = mongoose.model("tag", tagSchema);
 
 const express = require('express');
 const app = express();
 app.use(express.json());
 
 
-// tag Crud
+// user Crud
 
-app.post("/tags", async (req, res) => {
+app.post("/users", async (req, res) => {
     try {
-        const tags = await Tag.create(req.body);
-        return res.status(201).send({ tags });
+        const users = await User.create(req.body);
+        return res.status(201).send({ users });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -77,11 +94,11 @@ app.post("/tags", async (req, res) => {
 
 });
 
-app.get("/tags", async (req, res) => {
+app.get("/users", async (req, res) => {
 
     try {
-        const tags = await Tag.find().lean().exec();
-        return res.status(200).send({ tags });
+        const users = await User.find().lean().exec();
+        return res.status(200).send({ users });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -90,10 +107,10 @@ app.get("/tags", async (req, res) => {
 
 });
 
-app.get("/tags/:id", async (req, res) => {
+app.get("/users/:id", async (req, res) => {
     try {
-        const tag = await Tag.findById(req.params.id).lean().exec();
-        return res.status(200).send({ tag });
+        const user = await User.findById(req.params.id).lean().exec();
+        return res.status(200).send({ user });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -102,12 +119,12 @@ app.get("/tags/:id", async (req, res) => {
 
 });
 
-app.patch("/tags/:id", async (req, res) => {
+app.patch("/users/:id", async (req, res) => {
     try {
-        const tag = await Tag.findByIdAndUpdate(req.params.id, req.body, {
+        const user = await User.findByIdAndUpdate(req.params.id, req.body, {
             new: true,
         }).lean().exec();
-        return res.status(200).send({ tag });
+        return res.status(200).send({ user });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -115,22 +132,22 @@ app.patch("/tags/:id", async (req, res) => {
     }
 });
 
-app.delete("/tags/:id", async (req, res) => {
-    try{
-        const tag= await Tag.findByIdAndDelete(req.params.id).lean().exec(); 
-        return res.status(200).send({ tag}); 
+app.delete("/users/:id", async (req, res) => {
+    try {
+        const user = await User.findByIdAndDelete(req.params.id).lean().exec();
+        return res.status(200).send({ user });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
 
     }
-}); 
+});
 
 // books Crud
 app.post("/books", async (req, res) => {
     try {
         const newBooks = await Book.create(req.body);
-        return res.status(201).send({newBooks });
+        return res.status(201).send({ newBooks });
     }
     catch (e) {
         return res.status(500).json({ message: e.message });
@@ -169,7 +186,7 @@ app.patch("/books/:id", async (req, res) => {
         const book = await Book.findByIdAndUpdate(req.params.id, req.body, {
             new: true,
         })
-        .lean().exec();
+            .lean().exec();
         return res.status(200).send({ book });
     }
     catch (e) {
@@ -179,21 +196,23 @@ app.patch("/books/:id", async (req, res) => {
 });
 
 app.delete("/books/:id", async (req, res) => {
-    try{
-        const book= await Book.findByIdAndDelete(req.params.id).lean().exec(); 
-        return res.status(200).send({ book}); 
+    try {
+        const book = await Book.findByIdAndDelete(req.params.id).lean().exec();
+        return res.status(200).send({ book });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
 
     }
-}); 
+});
 
-//Author Crud
-app.post("/authors", async (req, res) => {
+// CheckedIn Crud
+app.post("/checked_Ins", async (req, res) => {
     try {
-        const authors = await Author.create(req.body);
-        return res.status(201).send({authors });
+        const checked_Ins = await CheckedIn.create(req.body);
+           
+        
+        return res.status(201).send({ checked_Ins });
     }
     catch (e) {
         return res.status(500).json({ message: e.message });
@@ -202,14 +221,14 @@ app.post("/authors", async (req, res) => {
 
 });
 
-app.get("/authors", async (req, res) => {
+app.get("/checked_Ins", async (req, res) => {
 
     try {
-        const authors = await Author.find()
-        .populate({path:"book_ids",select:"book_name"})
-        .populate("tag_ids")
-        .lean().exec();
-        return res.status(200).send({ authors });
+        const checked_Ins = await CheckedIn.find()
+            .populate({ path: "book_ids", select: "book_name" })
+            .populate("user_id")
+            .lean().exec();
+        return res.status(200).send({ checked_Ins });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -218,10 +237,10 @@ app.get("/authors", async (req, res) => {
 
 });
 
-app.get("/authors/:id", async (req, res) => {
+app.get("/checked_Ins/:id", async (req, res) => {
     try {
-        const author = await Author.findById(req.params.id).lean().exec();
-        return res.status(200).send({ author });
+        const checked_In = await CheckedIn.findById(req.params.id).lean().exec();
+        return res.status(200).send({ checked_In });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -230,13 +249,13 @@ app.get("/authors/:id", async (req, res) => {
 
 });
 
-app.patch("/authors/:id", async (req, res) => {
+app.patch("/checked_Ins/:id", async (req, res) => {
     try {
-        const author = await Author.findByIdAndUpdate(req.params.id, req.body, {
+        const checked_In = await CheckedIn.findByIdAndUpdate(req.params.id, req.body, {
             new: true,
         })
-        .lean().exec();
-        return res.status(200).send({ author });
+            .lean().exec();
+        return res.status(200).send({ checked_In });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
@@ -244,19 +263,84 @@ app.patch("/authors/:id", async (req, res) => {
     }
 });
 
-app.delete("/authors/:id", async (req, res) => {
-    try{
-        const author= await Author.findByIdAndDelete(req.params.id).lean().exec(); 
-        return res.status(200).send({ author}); 
+app.delete("/checked_Ins/:id", async (req, res) => {
+    try {
+        const checked_In = await CheckedIn.findByIdAndDelete(req.params.id).lean().exec();
+        return res.status(200).send({ checked_In });
     }
     catch (e) {
         return res.status(500).json({ message: e.message, status: "Failed" });
 
     }
-}); 
+});
 
+// CheckedOut Crud
+app.post("/checked_Outs", async (req, res) => {
+    try {
+        const checked_Outs = await CheckedOut.create(req.body);
+            
+        
+        return res.status(201).send({ checked_Outs });
+    }
+    catch (e) {
+        return res.status(500).json({ message: e.message });
 
+    }
 
+});
+
+app.get("/checked_Outs", async (req, res) => {
+
+    try {
+        const checked_Outs = await CheckedOut.find()
+            // .populate({ path: "checked_In_ids",select:"book_name" })
+            .lean().exec();
+           
+        return res.status(200).send({ checked_Outs });
+    }
+    catch (e) {
+        return res.status(500).json({ message: e.message, status: "Failed" });
+
+    }
+
+});
+
+app.get("/checked_Outs/:id", async (req, res) => {
+    try {
+        const checked_Out = await CheckedOut.findById(req.params.id).lean().exec();
+        return res.status(200).send({ checked_Out });
+    }
+    catch (e) {
+        return res.status(500).json({ message: e.message, status: "Failed" });
+
+    }
+
+});
+
+app.patch("/checked_Outs/:id", async (req, res) => {
+    try {
+        const checked_Out = await CheckedOut.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+        })
+            .lean().exec();
+        return res.status(200).send({ checked_Out });
+    }
+    catch (e) {
+        return res.status(500).json({ message: e.message, status: "Failed" });
+
+    }
+});
+
+app.delete("/checked_Outs/:id", async (req, res) => {
+    try {
+        const checked_Out = await CheckedOut.findByIdAndDelete(req.params.id).lean().exec();
+        return res.status(200).send({ checked_Out });
+    }
+    catch (e) {
+        return res.status(500).json({ message: e.message, status: "Failed" });
+
+    }
+});
 
 
 
